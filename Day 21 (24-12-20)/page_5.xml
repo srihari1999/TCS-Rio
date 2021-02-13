@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[M2M Communication]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    
+    <PageText>
+      <pText><![CDATA[Machine-to-machine communication, or M2M, is the communication between two machines or exchanging data, without human interfacing or interaction. This includes serial connection, powerline connection (PLC), or wireless communications in the industrial Internet of Things (IoT). Switching over to wireless has made M2M communication much easier and enabled more applications to be connected. In general, when someone says M2M communication, they often are referring to cellular communication for embedded devices. Examples of M2M communication in this case would be vending machines sending out inventory information or ATM machines getting authorization to dispense cash. Figure 5.11 shows a typical example for M2M communication.]]></pText>
+    </PageText>
+
+    <img src="images/5.jpg"/>
+    <PageText>
+      <pText><![CDATA[In the above example, when an accident occurs, from the emergency sensors in the car, information is sent to remote servers. The server alerts the hospital, emergency services, paramedics and the doctors. Ambulance and paramedics will be dispatched to the location where accident took place. Patient’s vital information will be transmitted from the ambulance to the doctors automatically. This may help the doctors to get ready while the ambulance reaches the hospital. This is a typical example for M2M communication where there is no intervention of human beings.
+        M2M communication is similar to industrial Supervisory Control and Data Acquisition system (SCADA). SCADA is designed for isolated systems using proprietary solutions whereas M2M is designed for cross-platform integration. Figure 5.12 gives an overview of M2M communication.
+        ]]></pText>
+    </PageText>
+
+    <img src="images/5.1.jpg"/>
+
+    <PageText>
+      <pText><![CDATA[At the outermost layer lie the sensors which sense the data. The sensed data is sent through a network to a server. At the server, information is extracted and processing is done. The action to be taken is sent to the actuators for appropriate action.
+        There are several features for M2M communication. Large number of nodes or devices can be involved in an M2M communication. Another feature of M2M is that it sends/receive small traffic per machine or device. Large quantity of collective data is generated which can be stored and queried later at any time. There is improved device connectivity because of the cloud data model. The cloud data model optimizes the device data communication aspect thereby reducing protocol overhead and easing device management. M2M communications are free from human intervention. Human intervention is required for operational stability and sustainability. In some situations, the device itself performs data analysis and correlation to trigger business decisions, with no programming skills required.
+        ]]></pText>
+    </PageText>
+  </PageData>
+</main>

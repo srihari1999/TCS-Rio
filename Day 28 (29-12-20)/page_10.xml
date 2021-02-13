@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[	Interoperability]]></MainHeading>
+
+    <PageText>
+      <pText><![CDATA[There are several challenges in IoT at present. Large scale cooperation and coordination of millions of nodes, heterogeneous IoT devices and their subnets, different configuration modes for IoT devices which come from unknown owners and different processing logics applied to same IoT networked devices or applications are to name a few.
+        Interoperability is the characteristic of a product or system, whose interfaces are completely understood to work with other products or systems, present or future, in either implementation or access, without any restrictions. Interoperability is the meaningful communication or exchange of data or services.
+        ]]></pText>
+    </PageText>
+                
+  </PageData>
+</main>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[FANET]]></MainHeading>
+    
+    <PageText>
+      <pText><![CDATA[Flying Ad hoc Network (FANET) is a subclass of Mobile Ad hoc Network (MANET) and made up of a 
+        swarm of small flying vehicles enabled with camera, sensor and GPS system. In FANET, network formation will be 
+        using UAVs which ensures longer range, clearer line of sight propagation and environment resilient communication. 
+        UAVs may be in same plane or organized at varying altitudes. Besides self-control, each UAV must be aware of the
+         other flying nodes of the FANET to avoid collision. These FANETS are popular for disaster time and post disaster 
+         emergency network establishment. There are situations such as flooding, war zone and rescue operations where 
+         traditional MANETs cannot be deployed because they uses ground moving nodes. FANETs can play significant role in 
+         those situations because they employ a swarm of UAVs to form ad hoc network. Figure 5.4 shows the architecture for 
+         FANET.]]></pText>
+    </PageText>
+    <img src="images/4.png"></img>
+
+    <SubHeading><![CDATA[Differences between FANET and the Existing Ad hoc Networks]]></SubHeading>
+                
+    <PageText>
+      <pText><![CDATA[Wireless ad hoc networks are classified according to their utilization, deployment, 
+        communication and mission objectives. By definition, FANET is a form of MANET and there are many common design
+         considerations for MANET and FANET. In addition to this, FANET can also be classified as a subset of VANET,
+          which is also a subgroup of MANET. FANET shares common characteristics with these networks, and it also has 
+          several unique design challenges. Following are the differences between FANET and other existing ad hoc 
+          networks.]]></pText>
+    </PageText>
+
+    <ol>
+      <li><b>Node Mobility:</b> Node mobility related issues are the most notable difference between FANET and the other ad hoc networks. MANET node movement is relatively slow when it is compared to VANET. In FANET, the node’s mobility degree is much higher than in the VANET and MANET. UAV has a speed of 30–460 km/h, and this situation results in several challenging communication design problems.</li>
+      <li><b>Mobility Model:</b> While MANET nodes move on a certain terrain, VANET nodes  move on the highways, and FANET nodes fly in the sky. MANETs generally implement the random waypoint mobility model, in which the direction and the speed of the nodes are chosen randomly. VANET nodes are restricted to move on highways or roads. Therefore, VANET mobility models are highly predictable. In some multi-UAV applications, global path plans are preferred. In this case, UAVs move on a predetermined path, and the mobility model is regular. In autonomous multi-UAV systems, the flight plan is not predetermined. Even if a multi-UAV system uses predefined flight plans, because of the environmental changes or mission updates, the flight plan may be recalculated. In addition to the flight plan changes, the fast and sharp UAV movements and different UAV formations directly affect the mobility model of multi-UAV systems. In order to address this issue, FANET mobility models are proposed. In Semi-Random Circular Movement (SRCM) mobility model, the approximate node distribution function is derived within a two dimensional disk region. There are two new mobility models proposed for multi-UAV systems. In random UAV movement model, UAVs move independently. Each UAV decides on its movement direction, according to a predefined Markov process. In the second model, the UAVs maintain a pheromone map, and the pheromones guide their movements. Each UAV marks the areas that it scans on the map, and shares the pheromone map with broadcasting. In order to maximize the coverage, UAVs prefer the movement through the areas with low pheromone smell. It was shown that the use of a typical MANET mobility model may result in undesirable path plans for cooperative UAV applications. It was also observed that the random model is remarkably simple, but it leads to ordinary results. However, the pheromone based model has very reliable scanning properties.</li>
+      <li><b>Mobility Model:</b> While MANET nodes move on a certain terrain, VANET nodes  move on the highways, and FANET nodes fly in the sky. MANETs generally implement the random waypoint mobility model, in which the direction and the speed of the nodes are chosen randomly. VANET nodes are restricted to move on highways or roads. Therefore, VANET mobility models are highly predictable. In some multi-UAV applications, global path plans are preferred. In this case, UAVs move on a predetermined path, and the mobility model is regular. In autonomous multi-UAV systems, the flight plan is not predetermined. Even if a multi-UAV system uses predefined flight plans, because of the environmental changes or mission updates, the flight plan may be recalculated. In addition to the flight plan changes, the fast and sharp UAV movements and different UAV formations directly affect the mobility model of multi-UAV systems. In order to address this issue, FANET mobility models are proposed. In Semi-Random Circular Movement (SRCM) mobility model, the approximate node distribution function is derived within a two dimensional disk region. There are two new mobility models proposed for multi-UAV systems. In random UAV movement model, UAVs move independently. Each UAV decides on its movement direction, according to a predefined Markov process. In the second model, the UAVs maintain a pheromone map, and the pheromones guide their movements. Each UAV marks the areas that it scans on the map, and shares the pheromone map with broadcasting. In order to maximize the coverage, UAVs prefer the movement through the areas with low pheromone smell. It was shown that the use of a typical MANET mobility model may result in undesirable path plans for cooperative UAV applications. It was also observed that the random model is remarkably simple, but it leads to ordinary results. However, the pheromone based model has very reliable scanning properties.</li>
+      <li><b>Node Density:</b> Node density can be defined as the average number of nodes in a unit area. FANET nodes are generally scattered in the sky and the distance between UAVs can be several kilometers even for small multi-UAV systems. As a result of this, FANET node density is much lower than in the MANET and VANET.</li>
+      <li><b>Topology Change:</b> Depending on the higher mobility degree, FANET topology also changes more frequently than MANET and VANET topology. In addition to the mobility of FANET nodes, UAV platform failures also affect the network topology. When a UAV fails, the links that the UAV has been involved in also fail and it results in a topology update. As in the UAV failures, UAV injections also conclude a topology update. Another factor that affects the FANET topology is the link outages. Because of the UAV movements and variations of FANET node distances, link quality changes very rapidly and it also causes link outages and topology changes.</li>
+      <li><b>Radio Propagation Model:</b> Differences between FANET and the other ad hoc network operating environments affect the radio propagation characteristics. MANET and VANETnodes are remarkably close to the ground and in many case, there is no line-of-sight between the sender and the receiver. Therefore, radio signals are mostly affected by the geographical structure of the terrain. However, FANET nodes can be far away from the ground and in most of the cases, there is a line-of-sight between UAVs.</li>
+      <li><b>Power Consumption and Network</b>  Lifetime: Network lifetime is a key design issue  for MANETs, which especially consist of battery-powered computing devices. Developing energy efficient communication protocols is the goal of efforts to increase the network lifetime. Especially, while the battery-powered computing devices are getting smaller in MANETs, system developers have to pay more attention to the energy efficient communication protocols to prolong the lifetime of the network. However, FANET communication hardware is powered by the energy source of the UAV. This means FANET communication hardware has no practical power resource problem as in MANET. In this case, FANET designs may not be power sensitive, unlike most of the MANET applications. However, it must be stated that power consumption still can be a design problem for mini UAVs.</li>
+      <li><b>Computational Power:</b> In ad hoc network concept, the nodes can act as routers. Therefore, they must have certain computation capabilities to process incoming data in real- time. Generally, MANET nodes are battery powered small computers such as laptops, PDAs and smart phones. Because of the size and energy constraints, the nodes have only limited computational power. On the other hand, both in VANETs and FANETs, application specific devices with high computational power can be used. Most of the UAVs have enough energy and space to include high computational power. The only limitation about the computational power is the weight. By the help of the hardware miniaturization tendency, it is possible to put powerful computation hardware in UAV platforms. However, the size and weight limitation can still constitute serious constraints for mini UAVs that have very limited payload capacity.</li>
+      <li><b>Localization:</b> Accurate geospatial localization is at the core of mobile and cooperative ad hoc networks. Existing localization methods include global positioning system (GPS), beacon (or anchor) nodes, and proximity-based localization. In MANET, GPS is generally used to receive the coordinates of a mobile communication terminal and most of the time, GPS is sufficient to determine the location of the nodes. When GPS is not available, such as in dense foliage areas, beacon nodes or proximity-based techniques can also be used. In VANET, for a navigation-grade GPS receiver, there is about 10–15 m accuracy, which can be acceptable for route guidance. However, it is not sufficient for cooperative safety applications, such as collision warnings for cars. Some researchers use assisted GPS (AGPS) or differential GPS (DGPS) by using some type of ground-based reference stations for range corrections with accuracy about 10 cm. Because of the high speed and different mobility models of multi-UAV systems, FANET needs highly accurate localization data with smaller time intervals. GPS provides position information at one-second interval and it may not be sufficient for certain FANET protocols. In this case, each UAV must be equipped with a GPS and an inertial measurement unit (IMU) to offer the position to the other UAVs at any time. IMU can be calibrated by the GPS signal and thus, it can provide the position of the UAV at a quicker rate. The differences between MANET, VANET and FANET are outlined in Table 5.3.</li>
+      <li></li>
+
+    </ol>
+
+    <SubHeading><![CDATA[Table 5.3 Differences between MANET, VANET and FANET]]></SubHeading>
+    
+    <th>
+      <tr>
+        <td>Node mobility</td>
+        <td>Mobility model</td>
+        <td>Node density</td>
+        <td>Topology change</td>
+        <td>Radio propagation model</td>
+        <td>Power consumption and network lifetime</td>
+        <td>Computational power</td>
+        <td>Localization</td>
+      </tr>
+    </th>
+
+    <th>
+      <tr>MANET
+        <td>Low</td>
+        <td>Random</td>
+        <td>Low</td>
+        <td>Slow</td>
+        <td>Close to ground. LoS is not available for all cases.</td>
+        <td>Energy efficient
+          protocols
+          </td>
+          <td>Limited</td>
+          <td>GPS</td>
+      </tr>
+    </th>
+
+    <th>
+      <tr>VANET
+        <td>High</td>
+        <td>Regular</td>
+        <td>High</td>
+        <td>Fast</td>
+        <td>Close to ground. LoS is not available for all cases.</td>
+        <td>Not needed</td>
+        <td>High</td>
+        <td>GPS, AGPS, DGPS, IMU</td>
+      </tr>
+    </th>
+
+    <th>
+      <tr>Fannet
+        <td>Very high</td>
+        <td>Regular for predetermined paths, but special mobility models for autonomous multi-UAV systems.</td>
+        <td>Very low</td>
+        <td>Fast</td>
+        <td>LoS is available for most of the cases.</td>
+        <td>Energy efficiency for mini UAVs but not needed for small UAVs.</td>
+        <td>High</td>
+        <td>GPS, AGPS, DGPS, IMU</td>
+      </tr>
+    </th>
+    <SubHeading>Design Considerations</SubHeading>
+
+    <PageText>
+      <pText><![CDATA[The distinguishing features of FANET impose unique design considerations. In this section, the most prominent FANET design considerations like adaptability, scalability, latency, UAV platform constraints and bandwidth requirements are discussed.]]></pText>
+    </PageText>
+    <b>Adaptability:</b>
+    <PageText>
+      <pText><![CDATA[There are several FANET parameters that can change during the operation of a multi-UAV system. FANET nodes are highly mobile and always change their location. Because of the operational requirements, the routes of the UAVs may be different and the distance between UAVs cannot be constant. Another issue that must be considered is the UAV failures. Consequent to a technical problem or an attack against multi-UAV system, some of the UAVs may fail during the operation. While UAV failures decrease the number of UAVs, UAV injections may be required to maintain the multi-UAV system operation. UAV failures and UAV injections change the FANET parameters.
+        Environmental conditions can also affect FANET. If the weather changes unexpectedly, FANET data links may not survive. FANET should be designed so that it should be able to continue to operate in a highly dynamic environment. The mission may also be updated during the multi-UAV system operation. Additional data or new information about the mission may require a flight plan update. For example, while a multi-UAV system is operated for a search and rescue mission; after the arrival of a new intelligence report, the mission may be concentrated on a certain area and the flight plan update also affects FANET parameters. FANET design should be developed so that it can adjust itself against any changes or failures. FANET physical layer should adapt according to the node density, distance between nodes and environmental changes. It can scan the parameters and choose the most appropriate physical layer option. The highly dynamic nature of FANET environment also affects network layer protocols. Route maintenance in an ad hoc network is closely related to the topology changes. Thus, the performance of the system depends on the routing protocol in adapting to link changes. Transport layer should also be adapted according to the status of FANET.
+        ]]></pText>
+    </PageText>
+
+    <b>Scalability:</b> 
+    
+    <PageText>
+      <pText><![CDATA[Collaborative work of UAVs can improve the performance of the system in comparison to a single-UAV system. In fact, this is the main motivation to use multi-UAV based systems. In many applications, the performance enhancement is closely related with the number of UAVs. For example, the higher number of UAVs can complete a search and rescue operation faster. FANET protocols and algorithms should be designed so that any number of UAVs can operate together with minimal performance degradation.]]></pText>
+    </PageText>
+
+    <b>Latency:</b>
+    <PageText>
+      <pText><![CDATA[Collaborative work of UAVs can improve the performance of the system in comparison to a single-UAV system. In fact, this is the main motivation to use multi-UAV based systems. In many applications, the performance enhancement is closely related with the number of UAVs. For example, the higher number of UAVs can complete a search and rescue operation faster. FANET protocols and algorithms should be designed so that any number of UAVs can operate together with minimal performance degradation.]]></pText>
+    </PageText>
+    <b>UAV Platform Constraints:</b> 
+    <PageText>
+      <pText><![CDATA[Collaborative work of UAVs can improve the performance of the system in comparison to a single-UAV system. In fact, this is the main motivation to use multi-UAV based systems. In many applications, the performance enhancement is closely related with the number of UAVs. For example, the higher number of UAVs can complete a search and rescue operation faster. FANET protocols and algorithms should be designed so that any number of UAVs can operate together with minimal performance degradation.]]></pText>
+    </PageText>
+    <b>Bandwidth  requirement: </b>
+    <PageText>
+      <pText><![CDATA[Collaborative work of UAVs can improve the performance of the system in comparison to a single-UAV system. In fact, this is the main motivation to use multi-UAV based systems. In many applications, the performance enhancement is closely related with the number of UAVs. For example, the higher number of UAVs can complete a search and rescue operation faster. FANET protocols and algorithms should be designed so that any number of UAVs can operate together with minimal performance degradation.also need additional bandwidth resource. On the other hand, there are many constraints for the usage of available bandwidth such as: capacity of the communication channel, speed of UAVs, error-prone structure of the wireless links and lack of security with broadcast communication. A FANET protocol must satisfy the bandwidth capacity requirement so that it can relay very high resolution real time image or video under several constraints.]]></pText>
+    </PageText>
+  </PageData>
+
+  <b>	FANET Communication</b>
+  <PageText>
+    <pText><![CDATA[There are several types of communication involved in FANET. Figure 5.5 shows different types of communication in a FANET.]]></pText>
+  
+  <img src="images/4.1png">FANET</img>
+  </PageText>
+  <ul>
+    <li>• Inter-plane Communication – In Figure 5.5 there are three planes for FANET. The communication between UAVs in one plane and UAVs of another plane is called inter-plane communication.</li>
+    <li>•	Intra-plane Communication – The communication between UAVs of the same plane is known as intra-plane communication.</li>
+    <li>•	Ground Station Communication – This is the communication between UAVs of any plane to the ground or base station.</li>
+    <li>•	Ground Sensor Communication - This is the communication between UAVs in any plane to the sensors on the ground.</li>
+    <li>•	FANET-VANET Communication – The FANETs could communicate with the Vehicular Ad hoc Networks (VANET) on the ground.</li>
+
+    <PageText>
+      <pText><![CDATA[Air-to-Air (A2A) links are used for data delivery among UAVs. Heterogeneous radio interfaces can be considered in A2A links such as XBee-PRO (IEEE 802.15.4) and Wi-Fi (IEEE 802.11). The ground networks can be stationary WSNs, VANETS or control stations. UAV-WSN link-up may be used for collaborative sensing as well as data muling. UAV- VANETs link-up may be used for visual guidance, data muling and coverage enhancement.]]></pText>
+    </PageText>
+  </ul>
+
+  <SubHeading>	Gateway Selection in FANETs</SubHeading>
+  <PageText>
+    <pText><![CDATA[Main communication requirements of UAV networks are the following.
+      1.	Sending back the sensor data.
+      2.	Receiving the control commands.
+      3.	Cooperative trajectory planning.
+      4.	Dynamic task assignment.
+      The number of UAV ground remote connections should be controlled to avoid interference. Reduced nodes in the UAV network should act as gateways to allow communication between all UAV and the ground. Entire UAV network coverage area is divided into sub-areas as shown in Figure 5.6.
+      ]]></pText>
+  </PageText>
+
+  <img src="images/4.2png">Sub-areas in Network Coverage Area</img>
+
+  <PageText>
+    <pText><![CDATA[Sub-area collectively covers the entire communication area. The size of the sub-area to be controlled is adjusted dynamically. The adjustments are based on UAV inter-connections and derived metrics. The derived metrics are optimized for several iterations till optimum state is achieved. Gateway selection is initiated by selection of the most stable node in the sub-area. Figure 5.7 illustrates the selection of most stable node in a sub-area.]]></pText>
+  </PageText>
+
+  <img src="images/4.3png">Layered Gateways in FANET</img>
+
+  <PageText>
+    <pText><![CDATA[Consecutively, the partition parameters are optimized according to topology. Each UAV acquires the information of all UAVs within its 2 hops. There are layered gateways in FANETs. Figure 5.8 shows layered gateways in FANET.]]></pText>
+  </PageText>
+  <img src="images/4.4png">Selection of Most Stable Node in Sub-area</img>
+
+<PageText>
+    <pText><![CDATA[In a multi-layered UAV topology, there will be one gateway in each layer. The gateways from each layer communicate forwarded information between layers as well as from groundcontrol. This will increase the delay between ground control and higher layers. This topology is not suitable for time-critical relaying tasks. For communication between FANETs and VANETs there are several links like Air-to-Air (A2A), Air-to-Vehicle (A2V) and Vehicle-to- Vehicle (V2V) links. Figure 5.9 shows various links in FANET and VANET. These links can be for surveillance, guidance, exploration or data transfer.]]></pText>
+  </PageText>
+  <img src="images/4.5png">Various Links in FANET and VANET</img>
+
+  <PageText>
+    <pText><![CDATA[In FANET-VANET communication, a mesh network can be formed in aerial plane. There can be several links between UAVs and ground network. Figure 5.10 shows different communications in FANET and VANET. Various communications like request, scheduling, control, sensing, navigation, data relay etc. can take place between FANETs and VANETs.]]></pText>
+  </PageText>
+  <img src="images/4.6png">Communications in FANET and VANET</img>
+
+  <PageText>
+    <pText><![CDATA[The control of trajectory is important for increasing the throughput. UAVs with queue occupancy above a threshold, experiences congestion resulting in communication delay. In such situations, the control station instructs UAVs to change centers of trajectory. Commands will be given to UAVs based on traffic at communication links that are busy. To provide enhanced coverage, UAVs may be commanded to change the radius of their trajectories.
+]]></pText>
+  </PageText>
+</main>

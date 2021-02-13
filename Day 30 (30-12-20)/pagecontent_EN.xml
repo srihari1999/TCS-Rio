@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <tableofcontent>Detailed Table of Contents</tableofcontent>
+  <MainBookName>Internet of Things</MainBookName>
+  <Topics>
+    <Content id="1" HeaderContant="Chapter 5. UAV Networks and M2M Communication"><![CDATA[5.1. Introduction]]></Content>
+    <Path><![CDATA[page_1.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.2 UAV Components]]></Content>
+    <Path><![CDATA[page_2.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.3. UAV Networks]]></Content>
+    <Path><![CDATA[page_3.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.3.1 Features]]></Content>
+    <Path><![CDATA[page_4.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.3.2 Challenges]]></Content>
+    <Path><![CDATA[page_5.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.3.3 Topology]]></Content>
+    <Path><![CDATA[page_6.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.4 FANET]]></Content>
+    <Path><![CDATA[page_7.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.4.1 Differences between FANET and the Existing Ad hoc Networks]]></Content>
+    <Path><![CDATA[page_8.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.4.2 FANET Design Considerations]]></Content>
+    <Path><![CDATA[page_9.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.4.3 FANET Communication]]></Content>
+    <Path><![CDATA[page_10.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.4.4 Gateway Selection in FANETs]]></Content>
+    <Path><![CDATA[page_11.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.5 M2M Communication]]></Content>
+    <Path><![CDATA[page_12.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[5.6 M2M Applications]]></Content>
+    <Path><![CDATA[page_13.xml]]></Path>
+  </Topics>
+  

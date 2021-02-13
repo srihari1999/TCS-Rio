@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[Types of Interoperability]]></MainHeading>
+    
+  <SubHeading><![CDATA[]]></SubHeading>
+    
+    <PageText>
+      <pText><![CDATA[Interoperability can be classified as a) user interoperability b) device interoperability. User interoperability is the interoperability problem between a user and a device whereas device interoperability is the interoperability problem between two different devices. Figure 5.17 which show the user and device interoperability issues.
+        Consider the following scenario where both devices A and B provide a real-time security service using IoT. Device A is placed at New Delhi, India while device B is placed at Tokyo, Japan. The devices A, B uses Hindi, Japanese languages respectively while user U uses English. The user U wants real-time service of CCTV camera from the devices A and B. The user does not understand the messages from devices A and B. Similarly devices A and B do not mutually understand each other. This is because devices A and B are different in terms of syntactic and semantic notions.
+        ]]></pText>
+    </PageText>
+      
+    <img src="images/12.jpg"/>
+    
+    <SubHeading><![CDATA[User Interoperability]]></SubHeading>
+
+    <PageText>
+      <pText><![CDATA[In user interoperability, the following problem needs to be solved.
+        a.	Device identification and categorization for discovery.
+        b.	Syntactic interoperability for device interaction.
+        c.	Semantic interoperability for device interaction
+        ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[In device identification and categorization for discovery, there are different solutions for generating unique address like Electronic Product Codes (EPC), Universal Product Code (UPC), Uniform Resource Identifier (URI) and IP addresses like IPv6. There are different device classification solutions like United Nations Standard Products and Services Code (UNSPSC)* and eCl@ss **. (UNSPSC)* is an open, global, multi-sector standard for efficient, accurate, flexible classification of products and services. eCl@ss ** is the standard for classification and clear description of cross-industry products.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[In syntactic interoperability for device interaction, the interoperability between devices and device user is in terms of message formats. The message format from a device to a user should be understandable for the user’s computer. On the other hand, the message format from the user to the device should be executable by the device. Some popular approaches in this regard are Service-Oriented Computing (SOC) based architecture, Web services, RESTful Web services, Open standard protocols such as IEEE 802.15.4, IEEE 802.15.1, Wireless Hart and closed protocols such as Z-wave. But Wireless Hart and Z-wave are incompatible with each other. There are middleware technologies like software middleware bridge which dynamically map physical devices with different domains. Based on the map, the devices can be discovered and controlled remotely. In cross-content syntactic interoperability, the exchange of messages takes place using XML syntax.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[In semantic interoperability for device interaction, the interoperability between devices and device user is in terms of the meaning of messages. The device can understand the meaning of user’s instruction that is sent from the user to the device. Similarly, the user can understand the meaning of device’s response sent from the device. One of the approaches for semantic interoperability is ontology based approach which includes device ontology, physical domain ontology and estimation ontology. But ontology based solution is limited to the defined domain or context. Another approach is the collaborative conceptualization theory. In this the object is defined based on the collaborative concept, which is called cosign. The representation of a collaborative sign (cosign) is defined as follows.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[Cosign of an object = (A, B, C, D), where A is a cosign internal identifier, B is a natural language, C is the context of A and D is a definition of the object. An example for CCTV cosign is given as cosign=(1234, English, CCTV, “Camera Type: Bullet, Communication: Network/IP, Horizontal Resolution: 2048 TVL”). This solution approach is applicable for different domains or contexts.
+
+        ]]></pText>
+    </PageText>
+
+    <SubHeading><![CDATA[Device  Interoperability]]></SubHeading>
+
+    <PageText>
+      <pText><![CDATA[A solution approach for device interoperability is Universal Middleware Bridge (UMB). UMB solves seamless interoperability problems caused by the heterogeneity of several kinds of home network middleware. UMB creates virtual maps among the physical devices of all middleware home networks such as HAVI, Jini, LonWorks and UPnP. It creates compatibility among these middleware home networks. Figure 5.18 shows the architecture of Universal Middleware Bridge (UMB). UMB consists of UMB core (UMB-C) and UMB adaptor (UMB-A).]]></pText>
+    </PageText>
+
+    <img src="images/12.1.jpg"/>
+
+    <PageText>
+      <pText><![CDATA[The structure of UMB core and UMB adaptor is shown in Figure 5.19 and 5.20 respectively.]]></pText>
+    </PageText>
+
+    <img src="images/12.2.jpg"/>
+
+    <PageText>
+      <pText><![CDATA[The major role of the UMB core (UMB-C) is routing the universal metadata message to the destination or to any other UMB adaptor by the Middleware Routing Table (MRT).]]></pText>
+    </PageText>
+
+    <img src="images/12.3.jpg"/>
+
+
+    <PageText>
+      <pText><![CDATA[UMB-A converts physical devices into virtually abstracted one and store it in Virtual Device Proxy Database (VDP DB) as described by Universal Device Template (UDT). UDT consists of a global device id, global function id, global action id, global event id and global parameters. UMB adaptors translate the local middleware’s message into global metadata’s message. Figure 5.21 shows the flow when a new device is plugged in.]]></pText>
+    </PageText>
+
+    <img src="images/12.4.jpg"/>
+
+    <PageText>
+      <pText><![CDATA[When a new device is plugged in to the UMB-A1, the first step is to detect the device and configure the device. Then a virtual device is created. The information like device online status, device id etc. is sent from the UMB adaptor to the UMB core. From the UMB core, the online status of the device, device id etc. is sent to UMB adaptor of other devices namely UMB-A2, UMB-A3, UMB-A4 and so on. There Virtual Device Proxy Database (VDP DB) is created. This is how two heterogeneous devices following different configurations communicate with each other.]]></pText>
+    </PageText>
+
+
+    <PageText>
+      <pText><![CDATA[Consider the following scenario in which a device is controlled and monitored. The local control or monitoring message is sent from first device to UMB-A1.From UMB-A1, local to UMB message conversion takes place and a query/action request is sent to UMB-C. From UMB-C, this query/action request is sent to UMB-A2 of the second device. Here UMB to local message conversion and local control/monitoring message takes place. A local message is then sent to UMB-A2. From there a query/action response is sent to UMB-A1 through UMB-C. UMB-A1 sends back local message to first device. Figure 5.22 shows the flow when a device is controlled and monitored.]]></pText>
+    </PageText>
+
+    <img src="images/12.5.jpg"/>
+  </PageData>
+</main>

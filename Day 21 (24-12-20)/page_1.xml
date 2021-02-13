@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<main>
+  <PageData>
+	<MainHeading><![CDATA[Introduction]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[This Chapter explains three important topics namely Unmanned Aerial 
+      Vehicle Networks (UAV), Machine to Machine Communication (M2M) and interoperability in Internet of Things.
+       An Unmanned Aerial Vehicle (UAV), commonly known as a drone, is an aircraft without a human pilot aboard. 
+       UAVs are a component of an Unmanned Aircraft System (UAS) which include a UAV, 
+       a ground-based controller and a system of communications between the two. 
+       The flight of UAVs may operate with various degrees of autonomy:\
+      either under remote control by a human operator or autonomously by onboard computers.
+      ]]>
+      </pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[Compared to manned aircraft, UAVs were originally used for missions too “dull, dirty or dangerous” for humans. While they originated mostly in military applications, their use is rapidly expanding to commercial, scientific, recreational, agricultural and other applications, such as policing, peacekeeping, surveillance, product deliveries, aerial photography, agriculture, smuggling and drone racing. Civilian UAVs now vastly outnumber military UAVs. They can be seen as an early commercial application of autonomous things, to be followed by the autonomous car and home robots.]]>
+      </pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[There are single UAV systems as well as Multi-UAV systems. Multi-UAV systems can collaboratively complete missions more efficiently and economically as compared to single UAV systems. Multiple UAVs can cover a given area faster or take photos from different perspectives at the same time. The development of such multi-UAV systems is still at an early stage and, consequently, profound research efforts are needed. Table 5.1 gives a comparison of single UAV system and Multi-UAV systems.]]>
+      </pText>
+    </PageText>
+
+    <PageText>
+      <pText>
+        <![CDATA[<div class="BigImgClass"><img src="en/images/1.png"></div>]]>
+      </pText>
+    </PageText>
+
+    <PageText>
+      <pText>
+        <![CDATA[<div class="ImageHeadingClass">Fig 1.1: Overview of Internet of Things</div>]]>
+      </pText>
+    </PageText>
+
+   
+    <PageText>
+      <pText>
+        <![CDATA[<table> 
+     
+	    	<tr> Features
+	    		<td>Failures</td>  
+	    		<td>Scalability</td>  
+	    		<td>Survivability</td>
+	    		<td>Speed of Mission</td>
+	    		<td>Cost</td>
+	    		<td>Bandwidth Required</td>
+	    		<td>Antenna</td> 
+	    		<td>Complexity of control</td>  
+	    		<td>Failure of co-ordinate</td> 
+	    	</tr> 
+    		</table>
+
+    		<table> 
+     
+	    	<tr> Single UAV System
+	    		<td>High</td>  
+	    		<td>Limited</td>  
+	    		<td>Poor</td>
+	    		<td>High</td> 
+	    		<td>Slow</td> 
+	    		<td>Medium</td> 
+	    		<td>High</td> 
+	    		<td>Omni-directional</td> 
+	    		<td>Low</td>   
+	    	</tr> 
+    		</table>	
+
+
+    		<table> 
+     
+	    	<tr> Multi-UAV System
+	    		<td>Low</td>  
+	    		<td>High</td>  
+	    		<td>High</td>  
+	    		<td>Fast</td> 
+	    		<td>High</td> 
+	    		<td>Medium</td> 
+	    		<td>Directional</td> 
+	    		<td>High</td> 
+	    		<td>Present</td> 
+	    	</tr> 
+    		</table>
+    		]]>
+      </pText>
+
+
+    </PageText>
+    <PageText>
+      <pText>
+        <![CDATA[<p></p>]]>
+      </pText>
+    </PageText>
+
+  </PageData>
+</main>

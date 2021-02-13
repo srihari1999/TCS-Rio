@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[UAV Components]]></MainHeading>
+    
+    <PageText>
+      <pText><![CDATA[Manned and unmanned aircraft of the same type generally have recognizably similar physical components. The main exceptions are the cockpit and environmental control system or life support systems. Some UAVs carry payloads (such as a camera) that weigh considerably less than an adult human, and as a result can be considerably smaller. Though they carry heavy payloads, military UAVs with weapons are lighter than their manned counterparts with comparable armaments.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[Small civilian UAVs have no life-critical systems and can thus be built out of lighter but less sturdy materials and shapes, and can use less robustly tested electronic control systems. For small UAVs, the quadcopter design has become popular, though this layout is rarely used for manned aircraft. Miniaturization means that less-powerful propulsion technologies can be used that are not feasible for manned aircraft, such as small electric motors and batteries.]]></pText>
+    </PageText>
+
+      <PageText>
+      <pText><![CDATA[Control systems for UAVs are often different than manned craft. For remote human control, a camera and video link almost always replace the cockpit windows; radio-transmitted digital commands replace physical cockpit controls. Autopilot software is used on both manned and unmanned aircraft, with varying feature sets. Figure 5.1 shows the architecture of UAV.]]></pText>
+    </PageText>
+ 
+
+    <html>
+      <img src="page_2_UAV.jpg"></img>                                                  
+    </html>
+
+<SubHeading><![CDATA[Aircraft body]]></SubHeading>
+	<PageText>
+      <pText><![CDATA[The primary difference for planes is the absence of the cockpit area and its windows. Tailless quadcopters are a common form factor for rotary wing UAVs while tailed mono and bi-copters are common for manned platforms.]]></pText>
+    </PageText>
+
+
+<SubHeading><![CDATA[Power supply and platform]]></SubHeading>
+	<PageText>
+      <pText><![CDATA[Small UAVs mostly use lithium-polymer batteries (Li-Po), while larger vehicles rely on conventional airplane engines. Battery elimination circuitry (BEC) is used to centralize power distribution and often harbors a microcontroller unit (MCU). Costlier switching BECs diminish heating on the platform.]]></pText>
+    </PageText>
+
+<SubHeading><![CDATA[Computing module]]></SubHeading>
+	<PageText>
+      <pText><![CDATA[UAV computing capability followed the advances of computing technology, beginning with analog controls and evolving into microcontrollers, then system-on-a-chip (SOC) and single- board computers (SBC). System hardware for small UAVs is often called the Flight Controller (FC), Flight Controller Board (FCB) or Autopilot.]]></pText>
+    </PageText>
+
+<SubHeading><![CDATA[Sensors]]></SubHeading>
+		<PageText>
+      <pText><![CDATA[Position and movement sensors give information about the aircraft state. Exteroceptive sensors deal with external information like distance measurements, while exproprioceptive ones correlate internal and external states. Non-cooperative sensors are able to detect targets autonomously so they are used for separation assurance and collision avoidance. Degrees of freedom (DOF) refer to both the amount and quality of sensors on-board: 6 DOF implies 3-axis gyroscopes and accelerometers (a typical inertial measurement unit – IMU), 9 DOF refers to an IMU plus a compass, 10 DOF adds a barometer and 11 DOF usually adds a GPS receiver.
+
+	]]></pText>
+    </PageText>
+<SubHeading><![CDATA[Actuators]]></SubHeading>
+
+	<PageText>
+      <pText><![CDATA[UAV actuators include digital electronic speed controllers (which control the RPM of the motors) linked to motors/engines and propellers, servomotors (for planes and helicopters mostly), weapons, payload actuators, LEDs and speakers.
+
+]]></pText>
+    </PageText>
+<SubHeading><![CDATA[Software]]></SubHeading>
+	<PageText>
+      <pText><![CDATA[UAV software called the flight stack or autopilot. UAVs are real-time systems that require rapid response to changing sensor data. Examples include Raspberry Pis, Beagleboards, etc. shielded with NavIO, PXFMini, etc. or designed from scratch such as Nuttx, preemptive-RT Linux, Xenomai, Orocos-Robot Operating System or DDS-ROS 2.0.]]></pText>
+    </PageText>
+
+    <SubHeading><![CDATA[Loop principles]]></SubHeading>
+	<PageText>
+      <pText><![CDATA[UAVs employ open-loop, closed-loop or hybrid control architectures. Open loop provides a positive control signal (faster, slower, left, right, up, down) without incorporating feedback from sensor data. Closed loop incorporates sensor feedback to adjust behavior (reduce speed to reflect tailwind, move to altitude 300 feet). The proportional–integral–derivative (PID) controller is common. Sometimes, feed forward is employed, transferring the need to close the loop further.]]></pText>
+    </PageText>
+
+    <SubHeading><![CDATA[Flight controls]]></SubHeading>
+	<PageText>
+      <pText><![CDATA[Flight control is one of the lower-layer systems and is similar to manned aviation: plane flight dynamics, control and automation, helicopter flight dynamics and controls and multi-rotor flight dynamics were researched long before the rise of UAVs. Automatic flight involves multiple levels of priority.
+        UAVs can be programmed to perform aggressive maneuvers or landing/perching on inclined surfaces and then to climb toward better communication spots. Some UAVs can control flight with varying flight models such as Vertical Take-Off and Landing (VTOL) designs. UAVs can also implement perching on a flat vertical surface.
+        ]]></pText>
+    </PageText>
+
+    <SubHeading><![CDATA[Communications]]></SubHeading>
+	<PageText>
+      <pText><![CDATA[Most UAVs use a radio frequency front-end that connects the antenna to the analog-to-digital converter and a flight computer that controls avionics. They are capable of autonomous or semi-autonomous operation. Radio allows remote control and exchange of video and other data. In military systems and high-end domestic applications, downlink may convey payload management status. In civilian applications, most transmissions are commands from operator to vehicle. Downstream is mainly video. Telemetry is another kind of downstream link, transmitting status about the aircraft systems to the remote operator. UAVs also use satellite “uplink” to access satellite navigation systems.
+        The radio signal from the operator side can be issued from either:
+        ]]>
+        <ol>
+          <li>a.	Ground control – a human operating a radio transmitter/receiver, a smart phone, a tablet, a computer, or the original meaning of a military Ground Control Station (GCS). Recently control from wearable devices, human movement recognition, human brain waves is also available.</li>
+        
+          <li>b.	Remote network system- such as satellite duplex data links for some military powers. Downstream digital video over mobile networks has also entered consumer markets, while direct UAV control uplink over the celullar mesh is under researched.</li>
+  
+         <li>c.	Another aircraft, serving as a relay or mobile control station – military manned- unmanned teaming (MUM-T).</li>
+
+        </ol>
+      </pText>
+    </PageText>
+  </PageData>
+</main>
